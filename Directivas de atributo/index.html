@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario festividades</title>
+    <style>
+        .regional {
+            background-color: rgb(103, 27, 110);
+        }
+
+        .regionall {
+            color: rgb(103, 27, 110);
+        }
+
+        .local {
+            background-color: rgb(226, 84, 226);
+        }
+
+        .locall {
+            color: rgb(226, 84, 226);
+        }
+
+        .nacional {
+            background-color: rgb(54, 182, 143);
+        }
+
+        .nacionall {
+            color: rgb(54, 182, 143);
+        }
+
+        .centre {
+            background-color: rgb(184, 184, 62);
+        }
+
+        .centree {
+            color: rgb(184, 184, 62);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: 1fr, repeat(7, 1fr);
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+        }
+
+        .grid-container>div {
+            border: unset;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-blend-mode: lighten;
+        }
+
+        .titulo {
+            background-color: #ffffff;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 3%;
+            padding: 10px;
+            width: 600px;
+            height: 600px;
+            margin: 5%;
+        }
+
+        .meses {
+            display: flex;
+            justify-content: left;
+        }
+
+        .nombres {
+            display: flex;
+            gap: 100px;
+            margin-left: 300px;
+        }
+
+        .dia {
+            background-color: rgb(90, 90, 90);
+            color: white;
+            font-weight: bolder;
+        }
+
+        b {
+            margin: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nombres">
+        <b>
+            <span class="nacionall">
+                Festiu Nacional
+            </span>
+        </b>
+        <b>
+            <span class="regionall">
+                Festiu Regional
+            </span>
+        </b>
+        <b>
+            <span class="locall">
+                Festiu Local
+            </span>
+        </b>
+        <b>
+            <span class="centree">
+                Festiu Centre
+            </span>
+        </b>
+
+    </div>
+    <div class="meses">
+        <div class="titulo"><b>Septiembre</b>
+            <div class="grid-container">
+                <div class="dia">L</div>
+                <div class="dia">M</div>
+                <div class="dia">X</div>
+                <div class="dia">J</div>
+                <div class="dia">V</div>
+                <div class="dia">S</div>
+                <div class="dia">D</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div class="regional">11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+                <div class="local">29</div>
+                <div>30</div>
+            </div>
+        </div>
+        <div class="titulo"><b>Octubre</b>
+            <div class="grid-container">
+                <div class="dia">L</div>
+                <div class="dia">M</div>
+                <div class="dia">X</div>
+                <div class="dia">J</div>
+                <div class="dia">V</div>
+                <div class="dia">S</div>
+                <div class="dia">D</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div class="nacional">12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+                <div>29</div>
+                <div>30</div>
+                <div class="centre">31</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
