@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(238, 202, 214)
+}
+footer{
+    text-align: center;
+}
+.titulo{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+    background-color: white;
+    text-align: center;
+}
+.buscador-ico{
+display: flex;
+width: 800px;
+height: 100px;
+background-color: white;
+position: absolute;
+left: 400px;
+top: 200px;
+}
+.buscador-ico>a>img{
+position: relative;
+left: 25%;
+top: 25%;
+}
+.buscador-bar{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+.novedades{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.display-novedades{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1px;
+}
+.imagen-producto>a>img{
+    width: 350px;
+    height: 350px;
+}
