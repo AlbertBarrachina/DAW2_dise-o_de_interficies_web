@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(238, 202, 214);
+    background-color: rgb(240, 205, 217);
     margin: 0px;
 }
 
 footer {
-    background-color: rgb(238, 202, 214);
+    background-color: rgb(240, 205, 217);
     color: black;
     text-align: center;
     font-size: 12px;
@@ -14,6 +14,7 @@ footer {
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 .titulo {
@@ -30,13 +31,15 @@ a {
 .categoria-link {
     position: absolute;
     top: 320px;
-    left: 700px;
+    left: 650px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .novedades-link {
     position: absolute;
     top: 320px;
-    left: 1000px;
+    left: 1050px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .buscador-ico {
@@ -122,7 +125,91 @@ a {
     gap: 1px;
 }
 
+.categorias {
+    position: absolute;
+    left: 0px;
+    top: 25pc;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #31353F;
+    color: white;
+    font-size: 20px;
+}
+
+.display-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5pc;
+}
+
+.fondo-semiopaco {
+    background-color: black;
+    opacity: 60%;
+    color: white;
+    height: 400px;
+    width: 400px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    opacity: 0;
+
+}
+
+.fondo-semiopaco:hover {
+    animation-name: categoria-raton;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+
+}
+
+.fondo-semiopaco>h1 {
+    position: relative;
+    top: 40%;
+}
+
+.buscador {
+    position: absolute;
+    left: 0px;
+    top: 25pc;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-top: 5pc;
+    background-color: #31353F;
+    color: white;
+    font-size: 20px;
+}
+
 .imagen-producto>a>img {
     width: 350px;
     height: 350px;
+}
+
+.imagen-categoria {
+    position: relative;
+}
+
+.imagen-categoria>a>img {
+    width: 500px;
+    height: 500px;
+}
+
+
+@keyframes categoria-raton {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 60%;
+    }
 }
