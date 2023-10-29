@@ -1,0 +1,165 @@
+body {
+    background-color: rgb(240, 205, 217);
+    margin: 0px;
+}
+
+footer {
+    background-color: rgb(240, 205, 217);
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 8px;
+    position: absolute;
+    bottom: 0pc;
+    width: 99%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.titulo {
+    display: flex;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 1750px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-left: 5pc;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 2pc;
+    margin-left: 10pc;
+    font-size: 20px;
+}
+
+.buscador-ico {
+    border-radius: 50%;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 2px black;
+    position: absolute;
+    left: 510px;
+    top: 215px;
+}
+
+.buscador-ico>a>img,
+.carrito-ico>a>img {
+    position: relative;
+    left: 20%;
+    top: 17%;
+}
+
+.perfil-ico>a>img {
+    width: 70px;
+    height: 70px;
+}
+
+.buscador-bar {
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    left: 585px;
+    top: 220px;
+    width: 690px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 0px 2px black;
+    border-color: white;
+}
+
+.carrito-ico {
+    border-radius: 50%;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 2px black;
+    position: absolute;
+    left: 1300px;
+    top: 215px;
+}
+
+.perfil-ico {
+    border-radius: 50%;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 2px black;
+    position: absolute;
+    right: 100px;
+    top: 215px;
+    overflow: hidden;
+}
+
+.pantalla-producto {
+    position: absolute;
+    left: 0px;
+    top: 20pc;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    min-height: 60pc;
+    height: fit-content;
+    background-color: #31353F;
+    color: white;
+    font-size: 20px;
+}
+
+.imagenes{
+    position: relative;
+    top: 5pc;
+    left: 5pc;
+    width: 600px;
+    height: 600px;
+    
+}
+
+.info-producto{
+    position: absolute;
+    right: 23pc;
+    top: 10pc;
+    width: 30pc;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2pc;
+    text-align: left;
+}
+
+.carrito-boton{
+    position: relative;
+    width: 15pc;
+    height: 4pc;
+    top: 0pc;
+    border-radius: 1pc;
+    font-size: 15px;
+}
+
+.comprar-boton{
+    position: relative;
+    width: 15pc;
+    height: 4pc;
+    top: 2pc;
+    border-radius: 1pc;
+    font-size: 30px;
+}

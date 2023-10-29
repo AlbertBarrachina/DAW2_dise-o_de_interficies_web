@@ -5,69 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/carrito.css">
     <title>Cosplays A.S.A.</title>
 </head>
 
 <body>
 
-    <div class="nav-bar">
-        <h2>Paginas</h2>
-        <ul>
-            <a href="index.html">Novedades(pagina principal)</a>
-        </ul>
-        <ul>
-            <a href="buscador.html">Buscador</a>
-        </ul>
-        <ul>
-            <a href="categorias.html">Categorias</a>
-        </ul>
-        <ul>
-            <a href="producto.html">Informacion del producto</a>
-        </ul>
-        <ul>
-            <a href="perfil.html">Perfil</a>
-        </ul>
-        <ul>
-            <a href="contacto.html">Contacto</a>
-        </ul>
-    </div>
-    
     <div class="titulo">
         <img src="src/cosplay.png" alt="">
-    </div>
-
-    <div><a href="perfil.html"><img src="src/icon/user.png" alt="Ver mi perfil"></a></div>
-
-    <div>
-        <div>
-            <img src="src/products/cosplay/cospaly1_2.jpg" alt="Imagen del producto">
-            <p>
-                Descripcion del producto comprado
-                <br>
-                xx€
-            </p>
-        </div>
-        <div>
+        <div class="nav-bar">
             <ul>
-                producto1 xx€
+                <a href="index.html">Novedades</a>
             </ul>
             <ul>
-                producto2 xx€
+                <a href="categorias.html">Categorias</a>
             </ul>
-
-            <span>
-                Total xx,x€
-            </span>
-            <br>
-            <button>COMPRAR</button>
+            <ul>
+                <a href="buscador.html">Buscador</a>
+            </ul>
+            <ul>
+                <a href="carrito.html">Carrito</a>
+            </ul>
+            <ul>
+                <a href="perfil.html">Perfil</a>
+            </ul>
+            <ul>
+                <a href="contacto.html">Contacto</a>
+            </ul>
         </div>
-
     </div>
 
+    <div class="volver-ico"><a href="producto.html"><img src="src/icon/left-arrow.png" alt="volver al prodcuto"></a>
+    </div>
 
-    <footer>
-        <span>Aviso de privacidad</span> <span><a href="contacto.html">Contacta con nosotros</a></span> <span>Cookies</span><br>
+    <div class="perfil-ico"><a href="perfil.html"><img src="src/icon/user.png" alt="Ver mi perfil"></a></div>
+
+    <div class="pantalla-carrito">
+        <div class="lista-imagen">
+            <div>
+                <a href="producto.html">
+                    <img src="src/products/sudaderas/sudadera1_1.jpg" alt="sudadera?">
+                </a>
+                <p>Sudadera estandard<br>10€</p>
+            </div>
+            <div>
+                <a href="producto.html">
+                    <img src="src/products/pelucas/peluca1_1_.jpg" alt="sudadera?">
+                </a>
+                <p>Peluda Makima<br>20€</p>
+            </div>
+            <div>
+                <a href="producto.html">
+                    <img src="src/products/pelucas/peluca2_2.jpg" alt="sudadera?">
+                </a>
+                <p>Peluca vagabundo(Scaramushe)<br>20€</p>
+            </div>
+            <div>
+                <a href="producto.html">
+                    <img src="src/products/cosplay/cospaly1_1.jpg" alt="sudadera?">
+                </a>
+                <p>cosaplay Miya<br>34€</p>
+            </div>
+        </div>
+        <div class="lista-texto">
+            <li>Sudadera estandard. 10€</li>
+            <li>Peluca Makima. 20€</li>
+            <li>Peluca vagabundao(Scaramushe). 20€</li>
+            <li>Cospaly Miya. 34€</li>
+            <ul></ul>
+            <p>TOTAL: 123,4€</p>
+            <ul></ul>
+        </div>
+        <button class="boton-comprar">COMPRAR</button>
+    </div>
+
+    <footer class="footer-formulario">
+        <span><a href="contacto.html">Contacta con nosotros</a></span>
+        <span>Cookies</span>
         (c) 2023-2024, Cosplays A.S.A., inc o sus afiliados
     </footer>
 </body>

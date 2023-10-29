@@ -11,45 +11,48 @@
 
 <body>
 
-    <div class="nav-bar">
-        <h2>Paginas</h2>
-        <ul>
-            <a href="index.html">Novedades(pagina principal)</a>
-        </ul>
-        <ul>
-            <a href="buscador.html">Buscador</a>
-        </ul>
-        <ul>
-            <a href="categorias.html">Categorias</a>
-        </ul>
-        <ul>
-            <a href="producto.html">Informacion del producto</a>
-        </ul>
-        <ul>
-            <a href="carrito.html">Carrito</a>
-        </ul>
-        <ul>
-            <a href="perfil.html">Perfil</a>
-        </ul>
-    </div>
+
 
     <div class="titulo">
         <img src="src/cosplay.png" alt="">
+        <div class="nav-bar">
+            <ul>
+                <a href="index.html">Novedades</a>
+            </ul>
+            <ul>
+                <a href="categorias.html">Categorias</a>
+            </ul>
+            <ul>
+                <a href="buscador.html">Buscador</a>
+            </ul>
+            <ul>
+                <a href="carrito.html">Carrito</a>
+            </ul>
+            <ul>
+                <a href="perfil.html">Perfil</a>
+            </ul>
+            <ul>
+                <a href="contacto.html">Contacto</a>
+            </ul>
+        </div>
     </div>
 
     <div>
-        <form action="">
-            <h1>Formulario de contacto</h1>
-            <label for="problema">Indique por que quiere contactar con nosotros:</label><br>
-            <input type="text" name="problema" required><br>
-            <label for="correo">Indique su correo electronico</label><br>
-            <input type="text" name="correo" required><br>
-            <input type="submit" value="Enviar">
-        </form>
+        <div class="formulario">
+            <form action="index.html">
+                <h1>Formulario de contacto</h1>
+                <label for="problema">Indique por que quiere contactar con nosotros:</label>
+                <input type="text" name="problema" required>
+                <label for="correo">Indique su correo electronico</label>
+                <input type="text" name="correo" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
     </div>
-    <footer>
-        <span>Aviso de privacidad</span> <span><a href="contacto.html">Contacta con nosotros</a></span>
-        <span>Cookies</span><br>
+    <footer class="footer-formulario">
+        <span><a href="contacto.html">Contacta con nosotros</a></span>
+        <span>Cookies</span>
         (c) 2023-2024, Cosplays A.S.A., inc o sus afiliados
     </footer>
 </body>

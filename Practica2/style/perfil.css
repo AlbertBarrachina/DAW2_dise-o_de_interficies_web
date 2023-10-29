@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(240, 205, 217);
+    margin: 0px;
+}
+
+footer {
+    background-color: rgb(240, 205, 217);
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 8px;
+    width: 99%;
+    position: absolute;
+    bottom: -20pc;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.titulo {
+    display: flex;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 1750px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-left: 5pc;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 2pc;
+    margin-left: 10pc;
+    font-size: 20px;
+}
+
+.caja-usuario{
+    text-align: left;
+    position: absolute;
+    width: 50pc;
+    height: 40pc;
+    background-color: white;
+    top: 20pc;
+    left: 30pc;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 1pc;
+    display: flex;
+    flex-direction: column;
+    gap: 2pc;
+    padding: 5pc;
+}
+.caja-usuario>p{
+    padding-left: 5pc;
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    width: 40pc;
+    height: 20pc;
+    gap: 1pc;
+    align-self: center;
+}
+.descripcion>button{
+align-self: left;
+width: 50%;
+border-radius: 1pc;
+}
+.editar{
+    margin-left: 5pc;
+    width: 60%;
+    align-self: left;
+    border-radius: 1pc;
+
+}
+
+.imagen-usuario{
+    position: absolute;
+    left: 8pc;
+    top: 22pc;
+    display: flex;
+    flex-direction: column;
+    gap: 2pc;
+}
+
+.imagen-usuario>div>img, .imagen-usuario>div{
+    width: 300px;
+    height: 300px;
+}
+.imagen-usuario>div{
+    border-radius: 100%;
+    background-color: white;
+}
