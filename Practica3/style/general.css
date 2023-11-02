@@ -132,10 +132,10 @@ a {
 }
 
 .display-novedades {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2pc;
 }
 
 .categorias {
@@ -202,9 +202,18 @@ a {
     font-size: 20px;
 }
 
-.imagen-producto>a>img {
-    width: 350px;
-    height: 350px;
+.display-buscador {
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-rows: auto;
+    text-align: center;
+    gap: 2pc;
+}
+
+
+.carousel-item>a>img {
+    width: 500px;
+    height: 500px;
 }
 
 .imagen-categoria {
@@ -214,6 +223,10 @@ a {
 .imagen-categoria>a>img {
     width: 500px;
     height: 500px;
+}
+.imagen-producto>a>img{
+    width: 350px;
+    height: 350px;
 }
 
 .formulario{
