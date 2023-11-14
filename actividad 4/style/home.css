@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(46, 39, 39);
+}
+.menu-top,.buscador,.links-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 7pc;
+    width: 100%;
+    margin: 1pc
+}
+.menu-top{
+    background-color: rgb(8, 8, 8);
+    margin:0pc
+}
+.buscador{
+    gap: 1pc;
+}
+.buscador>input{
+    width: 30pc;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    color: white;
+    font-style: oblique;
+    font-size: 3pc;
+    padding-left: 1pc;
+}
+.logout{
+    padding: 1pc;
+}
+.panel-peliculas{
+    position: absolute;
+    left: 3pc;
+    top: 10pc;
+    width: 90%;
+    height: fit-content;
+    background-color: rgb(8, 8, 8);
+}
+.pelicula{
+    width: 15px;
+    height: fit-content;
+}
