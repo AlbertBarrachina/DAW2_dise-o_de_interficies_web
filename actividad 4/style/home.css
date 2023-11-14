@@ -38,8 +38,15 @@ a{
     width: 90%;
     height: fit-content;
     background-color: rgb(8, 8, 8);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10pc;
+}
+.pelicula>img{
+    width: 15pc;
+    height: fit-content;
 }
 .pelicula{
-    width: 15px;
-    height: fit-content;
+    margin: 2pc;
 }
