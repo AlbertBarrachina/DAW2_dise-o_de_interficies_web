@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(243, 222, 221);
+}
+footer{
+    text-align: center;
+    color: black;
+    background-color: rgb(243, 222, 221);
+    position: absolute;
+    bottom: 0pc;
+    width: 100%;
+}
+.formulario{
+    padding: 2pc;
+    margin: 2pc;
+    position: absolute;
+    top: 10pc;
+    left: 45pc;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 5px 5px 10px black;
+}
+.formulario>form{
+display: flex;
+    flex-direction: column;
+    gap: 1pc;
+}

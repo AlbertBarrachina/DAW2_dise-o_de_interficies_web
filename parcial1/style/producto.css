@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(243, 222, 221);
+}
+.imagenes{
+display: flex;
+flex-direction: column;
+gap: 10pc;
+}
+.imagenes>div{
+    display: flex;
+    flex-direction: column;
+    width: 20pc;
+    height: fit-content;
+}
+.imagenes>div>img{
+    width: 20pc;
+    height: fit-content;
+}
