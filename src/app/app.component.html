@@ -1,0 +1,91 @@
+<div class="container-fluid row">
+    <div class="botones container">
+        <form action="">
+            <label for="direccion">Selecciona una ubicacion:</label>
+            <select name="direccion" [(ngModel)]="selectedDireccion">
+                <option value="">--</option>
+                <option *ngFor="let direccion of direcciones" [value]="direccion">{{ direccion }}</option>
+            </select>
+        </form>
+    </div>
+    <div class="contenido">
+
+        <h1>Proximos eventos</h1>
+        <div class="bg-dark resultados" *ngIf="eventosFiltrados.length>0; else noHay">
+
+            <div *ngFor="let evento of eventosFiltrados">
+                <div class="bg-light resultado" *ngIf="isEventPassed(evento)">
+                    <div *ngIf="evento.titulo">
+                        <h2>
+                            {{evento.titulo}}
+                        </h2>
+                    </div>
+                    <div *ngIf="evento.artista">
+                        <h3>
+                            {{evento.artista}}
+                        </h3>
+                    </div>
+                    <div *ngIf="evento.direccion">
+                        {{evento.direccion}}
+                    </div>
+                    <div *ngIf="evento.fecha">
+                        {{ evento.fecha | date:'MMM d, y - HH:mm\'h\'' }}
+                    </div>
+                    <div *ngIf="evento.precio>0; else gratis">
+                        <h3>
+                            {{ evento.precio | currency }}
+                        </h3>
+                    </div>
+                    <ng-template #gratis>
+                        <h2>
+                            Gratis!!
+                        </h2>
+                    </ng-template>
+                </div>
+            </div>
+
+        </div>
+
+        <h1>Eventos pasados</h1>
+        <div class="bg-dark resultados" *ngIf="eventosFiltrados.length>0; else noHay">
+
+            <div *ngFor="let evento of eventosFiltrados">
+                <div class="bg-light resultado" *ngIf="!isEventPassed(evento)">
+                    <div *ngIf="evento.titulo">
+                        <h2>
+                            {{evento.titulo}}
+                        </h2>
+                    </div>
+                    <div *ngIf="evento.artista">
+                        <h3>
+                            {{evento.artista}}
+                        </h3>
+                    </div>
+                    <div *ngIf="evento.direccion">
+                        {{evento.direccion}}
+                    </div>
+                    <div *ngIf="evento.fecha">
+                        {{ evento.fecha | date:'MMM d, y - HH:mm\h' }}
+                    </div>
+                    <div *ngIf="evento.precio; else gratis">
+                        <h3>
+                            {{ evento.precio | currency }}
+                        </h3>
+                    </div>
+                    <ng-template #gratis>
+                        <h2>
+                            Gratis!!
+                        </h2>
+                    </ng-template>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <ng-template #noHay>
+        <div class="resultado">
+            <p>Sin eventos por mostrar.</p>
+        </div>
+    </ng-template>
+</div>
