@@ -1,5 +1,5 @@
-<div class="container-fluid row">
-    <div class="botones container">
+<div class="">
+    <div class="botones">
         <form action="">
             <label for="direccion">Selecciona una ubicacion:</label>
             <select name="direccion" [(ngModel)]="selectedDireccion">
@@ -11,10 +11,10 @@
     <div class="contenido">
 
         <h1>Proximos eventos</h1>
-        <div class="bg-dark resultados" *ngIf="eventosFiltrados.length>0; else noHay">
+        <div class="resultados" *ngIf="eventosFiltrados.length>0; else noHay">
 
             <div *ngFor="let evento of eventosFiltrados">
-                <div class="bg-light resultado" *ngIf="isEventPassed(evento)">
+                <div class="resultado border border-success border-2" *ngIf="isEventPassed(evento)">
                     <div *ngIf="evento.titulo">
                         <h2>
                             {{evento.titulo}}
@@ -45,12 +45,17 @@
             </div>
 
         </div>
+        <ng-template #noHay>
+            <div class="resultado">
+                <p>Sin eventos por mostrar.</p>
+            </div>
+        </ng-template>
 
         <h1>Eventos pasados</h1>
-        <div class="bg-dark resultados" *ngIf="eventosFiltrados.length>0; else noHay">
+        <div class="resultados" *ngIf="eventosFiltrados.length>0; else noHay">
 
             <div *ngFor="let evento of eventosFiltrados">
-                <div class="bg-light resultado" *ngIf="!isEventPassed(evento)">
+                <div class="resultado border border-danger border-2" *ngIf="!isEventPassed(evento)">
                     <div *ngIf="evento.titulo">
                         <h2>
                             {{evento.titulo}}
@@ -81,11 +86,11 @@
             </div>
 
         </div>
-
+        <ng-template #noHay>
+            <div class="resultado">
+                <p>Sin eventos por mostrar.</p>
+            </div>
+        </ng-template>
     </div>
-    <ng-template #noHay>
-        <div class="resultado">
-            <p>Sin eventos por mostrar.</p>
-        </div>
-    </ng-template>
+
 </div>
