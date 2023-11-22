@@ -14,7 +14,7 @@
         <div class="resultados" *ngIf="eventosFiltrados.length>0; else noHay">
 
             <div *ngFor="let evento of eventosFiltrados">
-                <div class="resultado border border-success border-2" *ngIf="isEventPassed(evento)">
+                <div class="resultado border border-primary border-2" *ngIf="isEventPassed(evento)">
                     <div *ngIf="evento.titulo">
                         <h2>
                             {{evento.titulo}}
@@ -45,11 +45,6 @@
             </div>
 
         </div>
-        <ng-template #noHay>
-            <div class="resultado">
-                <p>Sin eventos por mostrar.</p>
-            </div>
-        </ng-template>
 
         <h1>Eventos pasados</h1>
         <div class="resultados" *ngIf="eventosFiltrados.length>0; else noHay">
