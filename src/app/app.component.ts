@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
   
     return Array.from(direccionesUnicas);
   }
-
+  
   get eventosFiltrados() {
     return this.selectedDireccion
       ? this.eventos.filter(evento => evento.direccion === this.selectedDireccion)

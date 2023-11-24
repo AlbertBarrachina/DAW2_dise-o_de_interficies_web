@@ -1,20 +1,20 @@
-<div class="">
-    <div class="botones">
-        <form action="">
-            <label for="direccion">Selecciona una ubicacion:</label>
-            <select name="direccion" [(ngModel)]="selectedDireccion">
-                <option value="">--</option>
-                <option *ngFor="let direccion of direcciones" [value]="direccion">{{ direccion }}</option>
-            </select>
-        </form>
-    </div>
-    <div class="contenido">
+<div>
+    <form class="pt-4 col-md-3 mx-auto text-center botones">
+        <label for="direccion" class="fs-2 text-wrap">Selecciona una ubicacion:</label>
+        <select name="direccion" [(ngModel)]="selectedDireccion" class="form-controll">
+            <option value="">--</option>
+            <option *ngFor="let direccion of direcciones" [value]="direccion">{{ direccion }}</option>
+            <option value="No tengo esa parte del codigo bien.">mostrar "no hay eventos"</option>
+        </select>
+    </form>
+    <div class="container-fluid">
 
-        <h1>Proximos eventos</h1>
-        <div class="resultados" *ngIf="eventosFiltrados.length>0; else noHay">
+        <h1 class="text-center">Proximos eventos</h1>
+        <div class="container-fluid mx-auto col-md d-flex flex-row flex-wrap justify-content-start column-gap-5 row-gap-5 text-center"
+            *ngIf="eventosFiltrados.length>0; else noHay">
 
             <div *ngFor="let evento of eventosFiltrados">
-                <div class="resultado border border-primary border-2" *ngIf="isEventPassed(evento)">
+                <div class="resultado border border-primary mb-2 text-center text-nowrap" *ngIf="isEventPassed(evento)">
                     <div *ngIf="evento.titulo">
                         <h2>
                             {{evento.titulo}}
@@ -42,15 +42,18 @@
                         </h2>
                     </ng-template>
                 </div>
+
             </div>
 
         </div>
 
-        <h1>Eventos pasados</h1>
-        <div class="resultados" *ngIf="eventosFiltrados.length>0; else noHay">
+        <h1 class="text-center">Eventos pasados</h1>
+        <div class="container-fluid mx-auto col-md d-flex flex-row flex-wrap justify-content-start text-center"
+            *ngIf="eventosFiltrados.length>0; else noHay">
 
             <div *ngFor="let evento of eventosFiltrados">
-                <div class="resultado border border-danger border-2" *ngIf="!isEventPassed(evento)">
+                <div class="resultado border border-danger mb-2 text-center text-nowrap"
+                    *ngIf="!isEventPassed(evento)">
                     <div *ngIf="evento.titulo">
                         <h2>
                             {{evento.titulo}}
@@ -78,11 +81,12 @@
                         </h2>
                     </ng-template>
                 </div>
+
             </div>
 
         </div>
         <ng-template #noHay>
-            <div class="resultado">
+            <div class="resultado d-flex align-items-center justify-content-center">
                 <p>Sin eventos por mostrar.</p>
             </div>
         </ng-template>
