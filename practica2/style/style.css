@@ -1,0 +1,15 @@
+.custom-grid{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.3pc;
+}
+.container-numero{
+    background-color: #4569a7;
+    color: white;
+    font-size: 2pc;
+    width: 5pc;
+    height: 5pc;
+    padding-top: 0.85pc;
+    border: 1px solid #000;
+}
