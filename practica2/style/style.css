@@ -8,8 +8,74 @@
     background-color: #4569a7;
     color: white;
     font-size: 2pc;
+    font-weight: bold;
     width: 5pc;
     height: 5pc;
     padding-top: 0.85pc;
     border: 1px solid #000;
+    user-select: none;
+}
+
+.caja-numeros{
+    width: fit-content;
+    padding-top: 13pc;
+}
+
+.caja-resultados{
+    width: 25pc;
+    height: 25pc;
+    position: absolute;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+    z-index: -1;
+    border-radius: 2pc;
+    opacity: 0;
+    text-align: center;
+    padding: 3pc;
+}
+
+.caja-resultados>p{
+    font-size: 2pc;
+}
+
+.panel-cronometro{
+    background-color: rgb(226, 224, 224);
+    
+    height: 4pc;
+    position: fixed;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 5%;
+}
+
+#cronometro{
+    color: rgb(42, 77, 233);
+    font-weight: bolder;
+    font-size: 1.5pc;
+}
+.logo{
+    position: absolute;
+    top: 1pc;
+    left: 2pc;
+}
+
+.logo>img{
+    border-radius: 1pc;
+    width: 4pc;
+    height: 4pc;
+}
+
+footer{
+    text-align: center;
+    margin-top: 25pc;
+}
+
+#tiempo-final{
+    margin-top: 5pc;
+    font-size: 4pc;
+    font-weight: bolder;
 }
