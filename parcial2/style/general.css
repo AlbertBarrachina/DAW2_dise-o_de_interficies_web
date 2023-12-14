@@ -1,0 +1,28 @@
+body{
+    padding: 0pc;
+    margin: 0pc;
+    display: flex;
+    flex-direction: column;
+}
+.a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+}
+.logo{
+    margin-left: 5pc;
+    margin-right: 15pc;
+    width: 7pc;
+    height: fit-content;
+    border-radius: 1pc;
+    box-shadow: 5px 5px 10px black;
+}
+footer{
+    text-align: center;
+    color: black;
+    background-color: rgb(243, 222, 221);
+}
+.imagen{
+    border-radius: 5%;
+}
